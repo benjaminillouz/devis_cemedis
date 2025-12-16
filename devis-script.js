@@ -619,32 +619,50 @@ function setupFinancingOptions() {
     }
 }
 
+// Afficher l'encadré de chargement financement
+function showFinancingLoading() {
+    const overlay = document.getElementById('financing-loading-overlay');
+    if (overlay) {
+        overlay.classList.add('active');
+    }
+}
+
+// Masquer l'encadré de chargement financement
+function hideFinancingLoading() {
+    const overlay = document.getElementById('financing-loading-overlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+    }
+}
+
 // Gestion du financement
 async function handleFinancing(paymentMethod) {
     const slider = document.getElementById('payment-slider');
     const amount = slider ? parseInt(slider.value) : parseInt(getUrlParameter('rac') || '100');
-    
+
     console.log(`Traitement du financement ${paymentMethod} pour ${amount}€`);
-    
+
+    // Afficher l'encadré de chargement
+    showFinancingLoading();
+
     try {
-        showNotification('Traitement de votre demande de financement...', 'info');
-        
         let response;
-        
+
         if (paymentMethod === 'veasy') {
             response = await handleVeasyFinancing(amount);
         } else {
             response = await handleStripeFinancing(amount, paymentMethod);
         }
-        
+
         if (response && response.link) {
             window.location.href = response.link;
         } else {
             throw new Error('Aucun lien de paiement reçu');
         }
-        
+
     } catch (error) {
         console.error('Erreur lors du financement:', error);
+        hideFinancingLoading();
         showNotification('Erreur lors de la création du lien de paiement. Veuillez réessayer.', 'error');
     }
 }
