@@ -1763,6 +1763,78 @@ body {
     }
 }
 
+/* Encadré de chargement financement */
+.financing-loading-overlay {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    animation: slideInRight 0.3s ease-out;
+}
+
+.financing-loading-overlay.active {
+    display: block;
+}
+
+.financing-loading-box {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-xl);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 280px;
+}
+
+.financing-loading-spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.financing-loading-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.financing-loading-text strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.financing-loading-text span {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+    .financing-loading-overlay {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+    }
+
+    .financing-loading-box {
+        min-width: auto;
+        padding: 0.75rem 1rem;
+    }
+
+    .financing-loading-text strong {
+        font-size: 0.9rem;
+    }
+
+    .financing-loading-text span {
+        font-size: 0.75rem;
+    }
+}
+
 /* États de chargement */
 .loading {
     display: flex;
