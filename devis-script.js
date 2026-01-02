@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     populateTreatmentTable();
     initializeFinancing();
     initializeCentreLogo();
+
+    // Initialiser le système de traduction
+    if (typeof initializeLanguage === 'function') {
+        initializeLanguage();
+    }
 });
 
 // Initialisation de l'application

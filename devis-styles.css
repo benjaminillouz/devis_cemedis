@@ -84,6 +84,76 @@ body {
     z-index: 1;
 }
 
+/* Sélecteur de langue */
+.language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius-sm);
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
+}
+
+.lang-btn.active {
+    background: white;
+    color: var(--primary-color);
+    border-color: white;
+}
+
+.lang-btn .flag {
+    font-size: 1.1rem;
+}
+
+.lang-btn .lang-code {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .lang-btn {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .lang-btn .lang-code {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-selector {
+        position: relative;
+        top: auto;
+        right: auto;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+
 .logo-section {
     display: flex;
     align-items: center;
