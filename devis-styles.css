@@ -90,15 +90,18 @@ body {
     top: 1rem;
     right: 1rem;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     z-index: 10;
 }
 
-.lang-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.5rem 0.75rem;
+.language-selector i {
+    color: white;
+    font-size: 1rem;
+}
+
+.language-selector select {
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: var(--border-radius-sm);
@@ -107,25 +110,27 @@ body {
     transition: var(--transition);
     font-size: 0.85rem;
     font-weight: 500;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    min-width: 140px;
 }
 
-.lang-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-1px);
+.language-selector select:hover {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
-.lang-btn.active {
-    background: white;
-    color: var(--primary-color);
+.language-selector select:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
     border-color: white;
 }
 
-.lang-btn .flag {
-    font-size: 1.1rem;
-}
-
-.lang-btn .lang-code {
-    font-weight: 600;
+.language-selector select option {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -134,13 +139,10 @@ body {
         right: 0.5rem;
     }
 
-    .lang-btn {
-        padding: 0.4rem 0.5rem;
+    .language-selector select {
+        padding: 0.4rem 1.5rem 0.4rem 0.5rem;
         font-size: 0.75rem;
-    }
-
-    .lang-btn .lang-code {
-        display: none;
+        min-width: 100px;
     }
 }
 
@@ -152,6 +154,35 @@ body {
         justify-content: center;
         margin-bottom: 1rem;
     }
+
+    .language-selector select {
+        min-width: 150px;
+    }
+}
+
+/* Support RTL pour l'arabe */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .nav-list {
+    flex-direction: row-reverse;
+}
+
+body.rtl .info-grid {
+    text-align: right;
+}
+
+body.rtl .language-selector {
+    right: auto;
+    left: 1rem;
+}
+
+body.rtl .summary-grid,
+body.rtl .remboursement-cards,
+body.rtl .financing-grid {
+    direction: rtl;
 }
 
 .logo-section {
