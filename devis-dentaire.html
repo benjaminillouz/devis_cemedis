@@ -6,17 +6,33 @@
     <title>Mon Devis Dentaire</title>
     <link rel="stylesheet" href="devis-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="translations.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
+            <!-- Sélecteur de langue -->
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="fr" onclick="setLanguage('fr')" title="Français">
+                    <span class="flag">🇫🇷</span>
+                    <span class="lang-code">FR</span>
+                </button>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" title="English">
+                    <span class="flag">🇬🇧</span>
+                    <span class="lang-code">EN</span>
+                </button>
+                <button class="lang-btn" data-lang="es" onclick="setLanguage('es')" title="Español">
+                    <span class="flag">🇪🇸</span>
+                    <span class="lang-code">ES</span>
+                </button>
+            </div>
             <div class="logo-section">
                 <img src="" 
                      alt="Logo du centre" class="logo" id="centre-logo">
                 <div class="header-text">
-                    <h1>Mon Devis Dentaire</h1>
-                    <p class="devis-number">Devis n° <span id="devis-id">-</span></p>
+                    <h1 data-i18n="header.title">Mon Devis Dentaire</h1>
+                    <p class="devis-number"><span data-i18n="header.devisNumber">Devis n°</span> <span id="devis-id">-</span></p>
                 </div>
             </div>
             <div class="patient-info">
@@ -25,15 +41,15 @@
                     <div class="info-grid">
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Centre : <span id="centre-name">-</span></span>
+                            <span><span data-i18n="header.centre">Centre :</span> <span id="centre-name">-</span></span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-user-md"></i>
-                            <span>Praticien : <span id="praticien-name">-</span></span>
+                            <span><span data-i18n="header.praticien">Praticien :</span> <span id="praticien-name">-</span></span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-calendar-alt"></i>
-                            <span>Date : <span id="devis-date">-</span></span>
+                            <span><span data-i18n="header.date">Date :</span> <span id="devis-date">-</span></span>
                         </div>
                     </div>
                 </div>
@@ -46,19 +62,19 @@
         <div class="container">
             <ul class="nav-list">
                 <li><a href="#devis" class="nav-link active" data-section="devis">
-                    <i class="fas fa-file-invoice"></i> Mon Devis
+                    <i class="fas fa-file-invoice"></i> <span data-i18n="nav.devis">Mon Devis</span>
                 </a></li>
                 <li><a href="#comprendre" class="nav-link" data-section="comprendre">
-                    <i class="fas fa-info-circle"></i> Comprendre
+                    <i class="fas fa-info-circle"></i> <span data-i18n="nav.comprendre">Comprendre</span>
                 </a></li>
                 <li><a href="#remboursements" class="nav-link" data-section="remboursements">
-                    <i class="fas fa-euro-sign"></i> Remboursements
+                    <i class="fas fa-euro-sign"></i> <span data-i18n="nav.remboursements">Remboursements</span>
                 </a></li>
                 <li><a href="#financement" class="nav-link" data-section="financement">
-                    <i class="fas fa-credit-card"></i> Financement
+                    <i class="fas fa-credit-card"></i> <span data-i18n="nav.financement">Financement</span>
                 </a></li>
                 <li><a href="#comparateur-mutuelles" class="nav-link" data-section="comparateur-mutuelles">
-                    <i class="fas fa-balance-scale"></i> Comparateur Mutuelles
+                    <i class="fas fa-balance-scale"></i> <span data-i18n="nav.comparateur">Comparateur Mutuelles</span>
                 </a></li>
             </ul>
         </div>
@@ -70,18 +86,18 @@
             <!-- Section Devis -->
             <section id="devis" class="content-section active">
                 <div class="section-header">
-                    <h2><i class="fas fa-file-invoice"></i> Mon Plan de Traitement</h2>
-                    <p>Détail de votre traitement dentaire</p>
+                    <h2><i class="fas fa-file-invoice"></i> <span data-i18n="devis.title">Mon Plan de Traitement</span></h2>
+                    <p data-i18n="devis.subtitle">Détail de votre traitement dentaire</p>
                 </div>
 
                 <div class="treatment-table-container">
                     <table class="treatment-table">
                         <thead>
                             <tr>
-                                <th><i class="fas fa-calendar"></i> Date</th>
-                                <th><i class="fas fa-tooth"></i> Acte</th>
-                                <th><i class="fas fa-hashtag"></i> Dent</th>
-                                <th><i class="fas fa-euro-sign"></i> Honoraires</th>
+                                <th><i class="fas fa-calendar"></i> <span data-i18n="devis.table.date">Date</span></th>
+                                <th><i class="fas fa-tooth"></i> <span data-i18n="devis.table.acte">Acte</span></th>
+                                <th><i class="fas fa-hashtag"></i> <span data-i18n="devis.table.dent">Dent</span></th>
+                                <th><i class="fas fa-euro-sign"></i> <span data-i18n="devis.table.honoraires">Honoraires</span></th>
                             </tr>
                         </thead>
                         <tbody id="treatment-table-body">
@@ -92,22 +108,22 @@
 
                 <div class="financial-summary">
                     <div class="summary-card">
-                        <h3><i class="fas fa-calculator"></i> Résumé Financier</h3>
+                        <h3><i class="fas fa-calculator"></i> <span data-i18n="devis.summary.title">Résumé Financier</span></h3>
                         <div class="summary-grid">
                             <div class="summary-item total">
-                                <span class="label">Montant total</span>
+                                <span class="label" data-i18n="devis.summary.total">Montant total</span>
                                 <span class="value" id="total-amount">- €</span>
                             </div>
                             <div class="summary-item security">
-                                <span class="label">Sécurité Sociale</span>
+                                <span class="label" data-i18n="devis.summary.ss">Sécurité Sociale</span>
                                 <span class="value" id="ss-amount">- €</span>
                             </div>
                             <div class="summary-item mutuelle">
-                                <span class="label">Mutuelle</span>
+                                <span class="label" data-i18n="devis.summary.mutuelle">Mutuelle</span>
                                 <span class="value" id="mut-amount">- €</span>
                             </div>
                             <div class="summary-item remaining">
-                                <span class="label">À votre charge</span>
+                                <span class="label" data-i18n="devis.summary.rac">À votre charge</span>
                                 <span class="value" id="rac-amount">- €</span>
                             </div>
                         </div>
@@ -116,10 +132,10 @@
 
                 <div class="action-buttons">
                     <button class="btn btn-primary" onclick="handleDownload()">
-                        <i class="fas fa-download"></i> Télécharger le PDF
+                        <i class="fas fa-download"></i> <span data-i18n="devis.btn.download">Télécharger le PDF</span>
                     </button>
                     <button class="btn btn-secondary" onclick="handleSignature()">
-                        <i class="fas fa-signature"></i> Signer le Devis
+                        <i class="fas fa-signature"></i> <span data-i18n="devis.btn.sign">Signer le Devis</span>
                     </button>
                 </div>
             </section>
@@ -127,8 +143,8 @@
             <!-- Section Comprendre -->
             <section id="comprendre" class="content-section">
                 <div class="section-header">
-                    <h2><i class="fas fa-lightbulb"></i> Comprendre Mon Devis</h2>
-                    <p>Informations détaillées sur votre traitement</p>
+                    <h2><i class="fas fa-lightbulb"></i> <span data-i18n="comprendre.title">Comprendre Mon Devis</span></h2>
+                    <p data-i18n="comprendre.subtitle">Informations détaillées sur votre traitement</p>
                 </div>
 
                 <!-- Navigation des actes -->
@@ -553,21 +569,21 @@
             <!-- Section Remboursements -->
             <section id="remboursements" class="content-section">
                 <div class="section-header">
-                    <h2><i class="fas fa-euro-sign"></i> Mes Remboursements</h2>
-                    <p>Détail de vos remboursements Sécurité Sociale et mutuelle</p>
+                    <h2><i class="fas fa-euro-sign"></i> <span data-i18n="remboursements.title">Mes Remboursements</span></h2>
+                    <p data-i18n="remboursements.subtitle">Détail de vos remboursements Sécurité Sociale et mutuelle</p>
                 </div>
 
                 <div class="remboursement-cards">
                     <div class="remboursement-card security">
                         <div class="card-header">
                             <i class="fas fa-shield-alt"></i>
-                            <h3>Sécurité Sociale</h3>
+                            <h3 data-i18n="remboursements.ss.title">Sécurité Sociale</h3>
                         </div>
                         <div class="card-content">
                             <div class="amount" id="ss-amount-remboursements">- €</div>
-                            <p>Remboursement direct de la Sécurité Sociale à votre établissement. Ce montant correspond à la colonne 'Part RO' ou 'Part S.S' sur un devis.</p>
+                            <p data-i18n="remboursements.ss.desc">Remboursement direct de la Sécurité Sociale à votre établissement. Ce montant correspond à la colonne 'Part RO' ou 'Part S.S' sur un devis.</p>
                             <div class="calculation">
-                                <small>Calculé à 60% de la Base de Remboursement (BR)</small>
+                                <small data-i18n="remboursements.ss.calc">Calculé à 60% de la Base de Remboursement (BR)</small>
                             </div>
                         </div>
                     </div>
@@ -575,14 +591,14 @@
                     <div class="remboursement-card mutuelle">
                         <div class="card-header">
                             <i class="fas fa-heart"></i>
-                            <h3>Mutuelle Complémentaire</h3>
+                            <h3 data-i18n="remboursements.mut.title">Mutuelle Complémentaire</h3>
                         </div>
                         <div class="card-content">
                             <div class="amount" id="mut-amount-remboursements">- €</div>
-                            <p>Montant remboursé par votre mutuelle complémentaire. Ce montant peut être réglé directement à notre établissement si votre mutuelle accepte la Prise En Charge Tiers Payant.</p>
+                            <p data-i18n="remboursements.mut.desc">Montant remboursé par votre mutuelle complémentaire. Ce montant peut être réglé directement à notre établissement si votre mutuelle accepte la Prise En Charge Tiers Payant.</p>
                             <div class="benefit">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Nos services s'occupent de toutes les démarches</span>
+                                <span data-i18n="remboursements.mut.benefit">Nos services s'occupent de toutes les démarches</span>
                             </div>
                         </div>
                     </div>
@@ -590,14 +606,14 @@
                     <div class="remboursement-card remaining">
                         <div class="card-header">
                             <i class="fas fa-wallet"></i>
-                            <h3>À Votre Charge</h3>
+                            <h3 data-i18n="remboursements.rac.title">À Votre Charge</h3>
                         </div>
                         <div class="card-content">
                             <div class="amount" id="rac-amount-remboursements">- €</div>
-                            <p>Montant que vous devez régler à l'établissement. Un acompte d'au moins 50% du montant à payer doit être versé lors de la commande des prothèses.</p>
+                            <p data-i18n="remboursements.rac.desc">Montant que vous devez régler à l'établissement. Un acompte d'au moins 50% du montant à payer doit être versé lors de la commande des prothèses.</p>
                             <div class="payment-info">
                                 <i class="fas fa-info-circle"></i>
-                                <span>Solutions de paiement en plusieurs fois disponibles</span>
+                                <span data-i18n="remboursements.rac.info">Solutions de paiement en plusieurs fois disponibles</span>
                             </div>
                         </div>
                     </div>
@@ -607,19 +623,19 @@
             <!-- Section Financement -->
             <section id="financement" class="content-section">
                 <div class="section-header">
-                    <h2><i class="fas fa-credit-card"></i> Financement</h2>
-                    <p>Solutions de paiement pour votre traitement</p>
+                    <h2><i class="fas fa-credit-card"></i> <span data-i18n="financement.title">Financement</span></h2>
+                    <p data-i18n="financement.subtitle">Solutions de paiement pour votre traitement</p>
                 </div>
 
                 <div class="amount-section">
                     <div class="amount-card">
-                        <h3><i class="fas fa-euro-sign"></i> Montant à payer</h3>
+                        <h3><i class="fas fa-euro-sign"></i> <span data-i18n="financement.amount">Montant à payer</span></h3>
                         <div class="amount-display" id="total-amount-financement">- €</div>
                     </div>
                 </div>
 
                 <div class="amount-selection">
-                    <h3>Sélectionnez un montant à financer</h3>
+                    <h3 data-i18n="financement.selectAmount">Sélectionnez un montant à financer</h3>
                     <div class="slider-container">
                         <input type="range" id="payment-slider" min="10" max="1000" value="100" class="slider">
                         <div class="slider-labels">
@@ -631,32 +647,32 @@
                 </div>
 
                 <div class="financing-options">
-                    <h3>Choisir votre mode de financement</h3>
+                    <h3 data-i18n="financement.chooseMethod">Choisir votre mode de financement</h3>
                     <div class="financing-grid">
                         <div class="financing-option" id="klarna-financing">
-                            <img src="https://static.wixstatic.com/media/b07e07_0603c1b3abd44130b7cea01b7f41b57e~mv2.png" 
+                            <img src="https://static.wixstatic.com/media/b07e07_0603c1b3abd44130b7cea01b7f41b57e~mv2.png"
                                  alt="Klarna" class="financing-logo">
                             <div class="financing-info">
-                                <h4>Klarna 3x 4x</h4>
-                                <p>Paiement en 3 ou 4 fois sans frais</p>
+                                <h4 data-i18n="financement.klarna.title">Klarna 3x 4x</h4>
+                                <p data-i18n="financement.klarna.desc">Paiement en 3 ou 4 fois sans frais</p>
                             </div>
                         </div>
 
                         <div class="financing-option" id="alma-financing">
-                            <img src="https://static.wixstatic.com/media/b07e07_ed60462387ab4276b91bebdddbde15bc~mv2.png" 
+                            <img src="https://static.wixstatic.com/media/b07e07_ed60462387ab4276b91bebdddbde15bc~mv2.png"
                                  alt="Alma" class="financing-logo">
                             <div class="financing-info">
-                                <h4>Alma 3x 4x</h4>
-                                <p>Paiement en plusieurs fois sans frais</p>
+                                <h4 data-i18n="financement.alma.title">Alma 3x 4x</h4>
+                                <p data-i18n="financement.alma.desc">Paiement en plusieurs fois sans frais</p>
                             </div>
                         </div>
 
                         <div class="financing-option" id="cb-financing">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png"
                                  alt="Cartes Bancaires" class="financing-logo">
                             <div class="financing-info">
-                                <h4>Cartes Bancaires</h4>
-                                <p>Paiement sécurisé par carte bancaire</p>
+                                <h4 data-i18n="financement.cb.title">Cartes Bancaires</h4>
+                                <p data-i18n="financement.cb.desc">Paiement sécurisé par carte bancaire</p>
                             </div>
                         </div>
                     </div>
@@ -665,13 +681,13 @@
                 <div class="financing-info-section">
                     <div class="info-card">
                         <i class="fas fa-shield-alt"></i>
-                        <h4>Paiement Sécurisé</h4>
-                        <p>Toutes les transactions sont protégées par un cryptage SSL</p>
+                        <h4 data-i18n="financement.secure.title">Paiement Sécurisé</h4>
+                        <p data-i18n="financement.secure.desc">Toutes les transactions sont protégées par un cryptage SSL</p>
                     </div>
                     <div class="info-card">
                         <i class="fas fa-clock"></i>
-                        <h4>Validation Rapide</h4>
-                        <p>Votre demande de financement est traitée en quelques minutes</p>
+                        <h4 data-i18n="financement.fast.title">Validation Rapide</h4>
+                        <p data-i18n="financement.fast.desc">Votre demande de financement est traitée en quelques minutes</p>
                     </div>
                 </div>
             </section>
@@ -679,8 +695,8 @@
             <!-- Section Comparateur Mutuelles -->
             <section id="comparateur-mutuelles" class="content-section">
                 <div class="section-header">
-                    <h2><i class="fas fa-balance-scale"></i> Comparateur Mutuelles</h2>
-                    <p>Comparez les offres de mutuelles pour optimiser vos remboursements</p>
+                    <h2><i class="fas fa-balance-scale"></i> <span data-i18n="comparateur.title">Comparateur Mutuelles</span></h2>
+                    <p data-i18n="comparateur.subtitle">Comparez les offres de mutuelles pour optimiser vos remboursements</p>
                 </div>
 
                 <div class="comparateur-container">
@@ -702,8 +718,8 @@
         <div class="financing-loading-box">
             <div class="financing-loading-spinner"></div>
             <div class="financing-loading-text">
-                <strong>Transmission en cours</strong>
-                <span>Envoi de vos informations de financement...</span>
+                <strong data-i18n="loading.title">Transmission en cours</strong>
+                <span data-i18n="loading.text">Envoi de vos informations de financement...</span>
             </div>
         </div>
     </div>
