@@ -14,18 +14,17 @@
         <div class="container">
             <!-- Sélecteur de langue -->
             <div class="language-selector">
-                <button class="lang-btn active" data-lang="fr" onclick="setLanguage('fr')" title="Français">
-                    <span class="flag">🇫🇷</span>
-                    <span class="lang-code">FR</span>
-                </button>
-                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" title="English">
-                    <span class="flag">🇬🇧</span>
-                    <span class="lang-code">EN</span>
-                </button>
-                <button class="lang-btn" data-lang="es" onclick="setLanguage('es')" title="Español">
-                    <span class="flag">🇪🇸</span>
-                    <span class="lang-code">ES</span>
-                </button>
+                <i class="fas fa-globe"></i>
+                <select id="language-selector" onchange="setLanguage(this.value)">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="pt">🇵🇹 Português</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="zh">🇨🇳 中文</option>
+                    <option value="sr">🇷🇸 Srpski</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                </select>
             </div>
             <div class="logo-section">
                 <img src="" 

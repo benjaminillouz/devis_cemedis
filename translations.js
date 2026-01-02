@@ -2,21 +2,16 @@
 const translations = {
     // Français (par défaut)
     fr: {
-        // Header
         "header.title": "Mon Devis Dentaire",
         "header.devisNumber": "Devis n°",
         "header.centre": "Centre :",
         "header.praticien": "Praticien :",
         "header.date": "Date :",
-
-        // Navigation
         "nav.devis": "Mon Devis",
         "nav.comprendre": "Comprendre",
         "nav.remboursements": "Remboursements",
         "nav.financement": "Financement",
         "nav.comparateur": "Comparateur Mutuelles",
-
-        // Section Devis
         "devis.title": "Mon Plan de Traitement",
         "devis.subtitle": "Détail de votre traitement dentaire",
         "devis.table.date": "Date",
@@ -30,54 +25,19 @@ const translations = {
         "devis.summary.rac": "À votre charge",
         "devis.btn.download": "Télécharger le PDF",
         "devis.btn.sign": "Signer le Devis",
-
-        // Section Comprendre
         "comprendre.title": "Comprendre Mon Devis",
         "comprendre.subtitle": "Informations détaillées sur votre traitement",
-        "comprendre.implants": "Implants",
-        "comprendre.orthodontie": "Orthodontie",
-        "comprendre.appareils": "Appareils",
-        "comprendre.bridges": "Bridges",
-        "comprendre.couronnes": "Couronnes",
-        "comprendre.inlayCore": "Inlay Core",
-        "comprendre.inlayOnlay": "Inlay Onlay",
-
-        // Implants
-        "implants.title": "Implants dentaires",
-        "implants.intro": "Les implants dentaires sont une solution moderne, durable et esthétique pour remplacer une ou plusieurs dents manquantes. Ils offrent une alternative fixe aux prothèses amovibles et aident à préserver la structure de la mâchoire et des dents adjacentes.",
-        "implants.whatIs.title": "Qu'est-ce qu'un implant dentaire ?",
-        "implants.whatIs.text": "Un implant dentaire est une racine artificielle en titane ou en zircone, insérée dans l'os de la mâchoire pour remplacer une dent manquante. Une couronne, un bridge ou une prothèse amovible est ensuite fixée sur cet implant pour restaurer l'apparence et la fonction de la dent.",
-        "implants.when.title": "Quand a-t-on besoin d'un implant dentaire ?",
-        "implants.when.text": "Les implants sont recommandés pour :",
-        "implants.when.item1": "Remplacer une ou plusieurs dents manquantes",
-        "implants.when.item2": "Stabiliser une prothèse amovible",
-        "implants.when.item3": "Prévenir la perte osseuse dans la mâchoire après une extraction",
-        "implants.when.item4": "Restaurer la fonction masticatoire et esthétique du sourire",
-        "implants.when.item5": "Offrir une alternative durable aux bridges et prothèses traditionnelles",
-        "implants.steps.title": "Étapes de réalisation :",
-        "implants.steps.item1": "Consultation initiale : Le dentiste évalue l'état de votre mâchoire, votre santé bucco-dentaire et vos besoins",
-        "implants.steps.item2": "Planification : Des examens (radiographie, scanner) sont réalisés pour évaluer la quantité et la qualité de l'os",
-        "implants.steps.item3": "Pose de l'implant : Sous anesthésie locale, l'implant est inséré dans l'os de la mâchoire",
-        "implants.steps.item4": "Période de cicatrisation : L'os fusionne avec l'implant (ostéointégration) sur une période de 3 à 6 mois",
-        "implants.steps.item5": "Fixation de l'élément prothétique : Une fois l'implant stable, une couronne, un bridge ou une prothèse est fixé(e) sur l'implant",
-        "implants.steps.item6": "Suivi régulier : Le dentiste contrôle l'état de l'implant et de la prothèse",
-        "implants.reimbursement.notCoveredSS": "Acte non remboursé par la Sécurité Sociale",
-        "implants.reimbursement.notCoveredMut": "Acte non pris en charge par les Mutuelles complémentaires sauf contrats spécifiques",
-
-        // Section Remboursements
         "remboursements.title": "Mes Remboursements",
         "remboursements.subtitle": "Détail de vos remboursements Sécurité Sociale et mutuelle",
         "remboursements.ss.title": "Sécurité Sociale",
-        "remboursements.ss.desc": "Remboursement direct de la Sécurité Sociale à votre établissement. Ce montant correspond à la colonne 'Part RO' ou 'Part S.S' sur un devis.",
+        "remboursements.ss.desc": "Remboursement direct de la Sécurité Sociale à votre établissement.",
         "remboursements.ss.calc": "Calculé à 60% de la Base de Remboursement (BR)",
         "remboursements.mut.title": "Mutuelle Complémentaire",
-        "remboursements.mut.desc": "Montant remboursé par votre mutuelle complémentaire. Ce montant peut être réglé directement à notre établissement si votre mutuelle accepte la Prise En Charge Tiers Payant.",
+        "remboursements.mut.desc": "Montant remboursé par votre mutuelle complémentaire.",
         "remboursements.mut.benefit": "Nos services s'occupent de toutes les démarches",
         "remboursements.rac.title": "À Votre Charge",
-        "remboursements.rac.desc": "Montant que vous devez régler à l'établissement. Un acompte d'au moins 50% du montant à payer doit être versé lors de la commande des prothèses.",
+        "remboursements.rac.desc": "Montant que vous devez régler à l'établissement.",
         "remboursements.rac.info": "Solutions de paiement en plusieurs fois disponibles",
-
-        // Section Financement
         "financement.title": "Financement",
         "financement.subtitle": "Solutions de paiement pour votre traitement",
         "financement.amount": "Montant à payer",
@@ -93,54 +53,25 @@ const translations = {
         "financement.secure.desc": "Toutes les transactions sont protégées par un cryptage SSL",
         "financement.fast.title": "Validation Rapide",
         "financement.fast.desc": "Votre demande de financement est traitée en quelques minutes",
-
-        // Section Comparateur
         "comparateur.title": "Comparateur Mutuelles",
         "comparateur.subtitle": "Comparez les offres de mutuelles pour optimiser vos remboursements",
-
-        // Modal Signature
-        "modal.signature.title": "Signature du Devis",
-        "modal.signature.patient": "Patient :",
-        "modal.signature.praticien": "Praticien :",
-        "modal.signature.total": "Montant total :",
-
-        // Loading
         "loading.title": "Transmission en cours",
         "loading.text": "Envoi de vos informations de financement...",
-
-        // Notifications
-        "notification.downloadError": "Erreur lors du téléchargement du devis",
-        "notification.noPdf": "Aucun PDF de devis disponible",
-        "notification.paymentError": "Erreur lors de la création du lien de paiement. Veuillez réessayer.",
-        "notification.missingId": "ID du devis manquant",
-
-        // Remboursement status
-        "reimbursement.covered": "Acte remboursé par la Sécurité Sociale",
-        "reimbursement.coveredMut": "Acte pris en charge par les Mutuelles complémentaires",
-        "reimbursement.notCovered": "Acte non remboursé par la Sécurité Sociale",
-        "reimbursement.notCoveredMut": "Acte non pris en charge par les Mutuelles complémentaires sauf contrats spécifiques",
-
-        // Sélecteur de langue
         "lang.select": "Langue"
     },
 
     // English
     en: {
-        // Header
         "header.title": "My Dental Quote",
         "header.devisNumber": "Quote No.",
         "header.centre": "Center:",
         "header.praticien": "Practitioner:",
         "header.date": "Date:",
-
-        // Navigation
         "nav.devis": "My Quote",
         "nav.comprendre": "Understand",
         "nav.remboursements": "Reimbursements",
         "nav.financement": "Financing",
         "nav.comparateur": "Insurance Comparison",
-
-        // Section Devis
         "devis.title": "My Treatment Plan",
         "devis.subtitle": "Details of your dental treatment",
         "devis.table.date": "Date",
@@ -154,54 +85,19 @@ const translations = {
         "devis.summary.rac": "Your share",
         "devis.btn.download": "Download PDF",
         "devis.btn.sign": "Sign Quote",
-
-        // Section Comprendre
         "comprendre.title": "Understanding My Quote",
         "comprendre.subtitle": "Detailed information about your treatment",
-        "comprendre.implants": "Implants",
-        "comprendre.orthodontie": "Orthodontics",
-        "comprendre.appareils": "Dentures",
-        "comprendre.bridges": "Bridges",
-        "comprendre.couronnes": "Crowns",
-        "comprendre.inlayCore": "Post and Core",
-        "comprendre.inlayOnlay": "Inlay Onlay",
-
-        // Implants
-        "implants.title": "Dental Implants",
-        "implants.intro": "Dental implants are a modern, durable and aesthetic solution to replace one or more missing teeth. They offer a fixed alternative to removable prostheses and help preserve the structure of the jaw and adjacent teeth.",
-        "implants.whatIs.title": "What is a dental implant?",
-        "implants.whatIs.text": "A dental implant is an artificial root made of titanium or zirconia, inserted into the jawbone to replace a missing tooth. A crown, bridge or removable prosthesis is then attached to this implant to restore the appearance and function of the tooth.",
-        "implants.when.title": "When do you need a dental implant?",
-        "implants.when.text": "Implants are recommended for:",
-        "implants.when.item1": "Replacing one or more missing teeth",
-        "implants.when.item2": "Stabilizing a removable prosthesis",
-        "implants.when.item3": "Preventing bone loss in the jaw after extraction",
-        "implants.when.item4": "Restoring chewing function and smile aesthetics",
-        "implants.when.item5": "Offering a durable alternative to traditional bridges and prostheses",
-        "implants.steps.title": "Implementation steps:",
-        "implants.steps.item1": "Initial consultation: The dentist evaluates the condition of your jaw, your oral health and your needs",
-        "implants.steps.item2": "Planning: Examinations (X-ray, scanner) are carried out to assess the quantity and quality of the bone",
-        "implants.steps.item3": "Implant placement: Under local anesthesia, the implant is inserted into the jawbone",
-        "implants.steps.item4": "Healing period: The bone fuses with the implant (osseointegration) over a period of 3 to 6 months",
-        "implants.steps.item5": "Prosthetic element attachment: Once the implant is stable, a crown, bridge or prosthesis is attached to the implant",
-        "implants.steps.item6": "Regular follow-up: The dentist monitors the condition of the implant and prosthesis",
-        "implants.reimbursement.notCoveredSS": "Procedure not covered by Social Security",
-        "implants.reimbursement.notCoveredMut": "Procedure not covered by complementary insurance except for specific contracts",
-
-        // Section Remboursements
         "remboursements.title": "My Reimbursements",
         "remboursements.subtitle": "Details of your Social Security and insurance reimbursements",
         "remboursements.ss.title": "Social Security",
-        "remboursements.ss.desc": "Direct reimbursement from Social Security to your facility. This amount corresponds to the 'SS Share' column on a quote.",
+        "remboursements.ss.desc": "Direct reimbursement from Social Security to your facility.",
         "remboursements.ss.calc": "Calculated at 60% of the Reimbursement Base",
         "remboursements.mut.title": "Complementary Insurance",
-        "remboursements.mut.desc": "Amount reimbursed by your complementary insurance. This amount can be paid directly to our facility if your insurance accepts Third Party Payment.",
+        "remboursements.mut.desc": "Amount reimbursed by your complementary insurance.",
         "remboursements.mut.benefit": "Our services handle all the procedures",
         "remboursements.rac.title": "Your Share",
-        "remboursements.rac.desc": "Amount you must pay to the facility. A deposit of at least 50% of the amount due must be paid when ordering prostheses.",
+        "remboursements.rac.desc": "Amount you must pay to the facility.",
         "remboursements.rac.info": "Payment in installments available",
-
-        // Section Financement
         "financement.title": "Financing",
         "financement.subtitle": "Payment solutions for your treatment",
         "financement.amount": "Amount to pay",
@@ -217,54 +113,25 @@ const translations = {
         "financement.secure.desc": "All transactions are protected by SSL encryption",
         "financement.fast.title": "Quick Validation",
         "financement.fast.desc": "Your financing request is processed in minutes",
-
-        // Section Comparateur
         "comparateur.title": "Insurance Comparison",
         "comparateur.subtitle": "Compare insurance offers to optimize your reimbursements",
-
-        // Modal Signature
-        "modal.signature.title": "Quote Signature",
-        "modal.signature.patient": "Patient:",
-        "modal.signature.praticien": "Practitioner:",
-        "modal.signature.total": "Total amount:",
-
-        // Loading
         "loading.title": "Transmission in progress",
         "loading.text": "Sending your financing information...",
-
-        // Notifications
-        "notification.downloadError": "Error downloading quote",
-        "notification.noPdf": "No quote PDF available",
-        "notification.paymentError": "Error creating payment link. Please try again.",
-        "notification.missingId": "Quote ID missing",
-
-        // Remboursement status
-        "reimbursement.covered": "Procedure covered by Social Security",
-        "reimbursement.coveredMut": "Procedure covered by complementary insurance",
-        "reimbursement.notCovered": "Procedure not covered by Social Security",
-        "reimbursement.notCoveredMut": "Procedure not covered by complementary insurance except for specific contracts",
-
-        // Sélecteur de langue
         "lang.select": "Language"
     },
 
     // Español
     es: {
-        // Header
         "header.title": "Mi Presupuesto Dental",
         "header.devisNumber": "Presupuesto n°",
         "header.centre": "Centro:",
         "header.praticien": "Profesional:",
         "header.date": "Fecha:",
-
-        // Navigation
         "nav.devis": "Mi Presupuesto",
         "nav.comprendre": "Entender",
         "nav.remboursements": "Reembolsos",
         "nav.financement": "Financiación",
         "nav.comparateur": "Comparador de Seguros",
-
-        // Section Devis
         "devis.title": "Mi Plan de Tratamiento",
         "devis.subtitle": "Detalle de su tratamiento dental",
         "devis.table.date": "Fecha",
@@ -278,54 +145,19 @@ const translations = {
         "devis.summary.rac": "A su cargo",
         "devis.btn.download": "Descargar PDF",
         "devis.btn.sign": "Firmar Presupuesto",
-
-        // Section Comprendre
         "comprendre.title": "Entender Mi Presupuesto",
         "comprendre.subtitle": "Información detallada sobre su tratamiento",
-        "comprendre.implants": "Implantes",
-        "comprendre.orthodontie": "Ortodoncia",
-        "comprendre.appareils": "Prótesis",
-        "comprendre.bridges": "Puentes",
-        "comprendre.couronnes": "Coronas",
-        "comprendre.inlayCore": "Perno muñón",
-        "comprendre.inlayOnlay": "Inlay Onlay",
-
-        // Implants
-        "implants.title": "Implantes dentales",
-        "implants.intro": "Los implantes dentales son una solución moderna, duradera y estética para reemplazar uno o varios dientes faltantes. Ofrecen una alternativa fija a las prótesis removibles y ayudan a preservar la estructura de la mandíbula y los dientes adyacentes.",
-        "implants.whatIs.title": "¿Qué es un implante dental?",
-        "implants.whatIs.text": "Un implante dental es una raíz artificial de titanio o circonio, insertada en el hueso de la mandíbula para reemplazar un diente faltante. Una corona, puente o prótesis removible se fija luego a este implante para restaurar la apariencia y función del diente.",
-        "implants.when.title": "¿Cuándo se necesita un implante dental?",
-        "implants.when.text": "Los implantes se recomiendan para:",
-        "implants.when.item1": "Reemplazar uno o varios dientes faltantes",
-        "implants.when.item2": "Estabilizar una prótesis removible",
-        "implants.when.item3": "Prevenir la pérdida ósea en la mandíbula después de una extracción",
-        "implants.when.item4": "Restaurar la función masticatoria y la estética de la sonrisa",
-        "implants.when.item5": "Ofrecer una alternativa duradera a puentes y prótesis tradicionales",
-        "implants.steps.title": "Etapas de realización:",
-        "implants.steps.item1": "Consulta inicial: El dentista evalúa el estado de su mandíbula, su salud bucal y sus necesidades",
-        "implants.steps.item2": "Planificación: Se realizan exámenes (radiografía, escáner) para evaluar la cantidad y calidad del hueso",
-        "implants.steps.item3": "Colocación del implante: Bajo anestesia local, el implante se inserta en el hueso de la mandíbula",
-        "implants.steps.item4": "Período de cicatrización: El hueso se fusiona con el implante (osteointegración) durante un período de 3 a 6 meses",
-        "implants.steps.item5": "Fijación del elemento protésico: Una vez que el implante está estable, se fija una corona, puente o prótesis al implante",
-        "implants.steps.item6": "Seguimiento regular: El dentista controla el estado del implante y la prótesis",
-        "implants.reimbursement.notCoveredSS": "Procedimiento no cubierto por la Seguridad Social",
-        "implants.reimbursement.notCoveredMut": "Procedimiento no cubierto por seguros complementarios excepto contratos específicos",
-
-        // Section Remboursements
         "remboursements.title": "Mis Reembolsos",
         "remboursements.subtitle": "Detalle de sus reembolsos de Seguridad Social y seguro",
         "remboursements.ss.title": "Seguridad Social",
-        "remboursements.ss.desc": "Reembolso directo de la Seguridad Social a su establecimiento. Este importe corresponde a la columna 'Parte SS' en un presupuesto.",
+        "remboursements.ss.desc": "Reembolso directo de la Seguridad Social a su establecimiento.",
         "remboursements.ss.calc": "Calculado al 60% de la Base de Reembolso",
         "remboursements.mut.title": "Seguro Complementario",
-        "remboursements.mut.desc": "Importe reembolsado por su seguro complementario. Este importe puede ser pagado directamente a nuestro establecimiento si su seguro acepta el Pago a Terceros.",
+        "remboursements.mut.desc": "Importe reembolsado por su seguro complementario.",
         "remboursements.mut.benefit": "Nuestros servicios se encargan de todos los trámites",
         "remboursements.rac.title": "A Su Cargo",
-        "remboursements.rac.desc": "Importe que debe pagar al establecimiento. Un anticipo de al menos el 50% del importe a pagar debe ser abonado al encargar las prótesis.",
+        "remboursements.rac.desc": "Importe que debe pagar al establecimiento.",
         "remboursements.rac.info": "Soluciones de pago en cuotas disponibles",
-
-        // Section Financement
         "financement.title": "Financiación",
         "financement.subtitle": "Soluciones de pago para su tratamiento",
         "financement.amount": "Importe a pagar",
@@ -341,37 +173,325 @@ const translations = {
         "financement.secure.desc": "Todas las transacciones están protegidas por cifrado SSL",
         "financement.fast.title": "Validación Rápida",
         "financement.fast.desc": "Su solicitud de financiación se procesa en minutos",
-
-        // Section Comparateur
         "comparateur.title": "Comparador de Seguros",
         "comparateur.subtitle": "Compare ofertas de seguros para optimizar sus reembolsos",
-
-        // Modal Signature
-        "modal.signature.title": "Firma del Presupuesto",
-        "modal.signature.patient": "Paciente:",
-        "modal.signature.praticien": "Profesional:",
-        "modal.signature.total": "Importe total:",
-
-        // Loading
         "loading.title": "Transmisión en curso",
         "loading.text": "Enviando su información de financiación...",
-
-        // Notifications
-        "notification.downloadError": "Error al descargar el presupuesto",
-        "notification.noPdf": "No hay PDF de presupuesto disponible",
-        "notification.paymentError": "Error al crear el enlace de pago. Por favor, inténtelo de nuevo.",
-        "notification.missingId": "ID del presupuesto faltante",
-
-        // Remboursement status
-        "reimbursement.covered": "Procedimiento cubierto por la Seguridad Social",
-        "reimbursement.coveredMut": "Procedimiento cubierto por seguro complementario",
-        "reimbursement.notCovered": "Procedimiento no cubierto por la Seguridad Social",
-        "reimbursement.notCoveredMut": "Procedimiento no cubierto por seguros complementarios excepto contratos específicos",
-
-        // Sélecteur de langue
         "lang.select": "Idioma"
+    },
+
+    // Português
+    pt: {
+        "header.title": "Meu Orçamento Dentário",
+        "header.devisNumber": "Orçamento n°",
+        "header.centre": "Centro:",
+        "header.praticien": "Profissional:",
+        "header.date": "Data:",
+        "nav.devis": "Meu Orçamento",
+        "nav.comprendre": "Entender",
+        "nav.remboursements": "Reembolsos",
+        "nav.financement": "Financiamento",
+        "nav.comparateur": "Comparador de Seguros",
+        "devis.title": "Meu Plano de Tratamento",
+        "devis.subtitle": "Detalhes do seu tratamento dentário",
+        "devis.table.date": "Data",
+        "devis.table.acte": "Procedimento",
+        "devis.table.dent": "Dente",
+        "devis.table.honoraires": "Honorários",
+        "devis.summary.title": "Resumo Financeiro",
+        "devis.summary.total": "Valor total",
+        "devis.summary.ss": "Segurança Social",
+        "devis.summary.mutuelle": "Seguro",
+        "devis.summary.rac": "A seu cargo",
+        "devis.btn.download": "Baixar PDF",
+        "devis.btn.sign": "Assinar Orçamento",
+        "comprendre.title": "Entender Meu Orçamento",
+        "comprendre.subtitle": "Informações detalhadas sobre seu tratamento",
+        "remboursements.title": "Meus Reembolsos",
+        "remboursements.subtitle": "Detalhes dos seus reembolsos de Segurança Social e seguro",
+        "remboursements.ss.title": "Segurança Social",
+        "remboursements.ss.desc": "Reembolso direto da Segurança Social para o seu estabelecimento.",
+        "remboursements.ss.calc": "Calculado a 60% da Base de Reembolso",
+        "remboursements.mut.title": "Seguro Complementar",
+        "remboursements.mut.desc": "Valor reembolsado pelo seu seguro complementar.",
+        "remboursements.mut.benefit": "Nossos serviços cuidam de todos os procedimentos",
+        "remboursements.rac.title": "A Seu Cargo",
+        "remboursements.rac.desc": "Valor que você deve pagar ao estabelecimento.",
+        "remboursements.rac.info": "Soluções de pagamento parcelado disponíveis",
+        "financement.title": "Financiamento",
+        "financement.subtitle": "Soluções de pagamento para seu tratamento",
+        "financement.amount": "Valor a pagar",
+        "financement.selectAmount": "Selecione um valor a financiar",
+        "financement.chooseMethod": "Escolha seu método de pagamento",
+        "financement.klarna.title": "Klarna 3x 4x",
+        "financement.klarna.desc": "Pagamento em 3 ou 4 parcelas sem juros",
+        "financement.alma.title": "Alma 3x 4x",
+        "financement.alma.desc": "Pagamento parcelado sem juros",
+        "financement.cb.title": "Cartões Bancários",
+        "financement.cb.desc": "Pagamento seguro com cartão",
+        "financement.secure.title": "Pagamento Seguro",
+        "financement.secure.desc": "Todas as transações são protegidas por criptografia SSL",
+        "financement.fast.title": "Validação Rápida",
+        "financement.fast.desc": "Seu pedido de financiamento é processado em minutos",
+        "comparateur.title": "Comparador de Seguros",
+        "comparateur.subtitle": "Compare ofertas de seguros para otimizar seus reembolsos",
+        "loading.title": "Transmissão em andamento",
+        "loading.text": "Enviando suas informações de financiamento...",
+        "lang.select": "Idioma"
+    },
+
+    // العربية (Arabic)
+    ar: {
+        "header.title": "تقدير أسنان",
+        "header.devisNumber": "رقم التقدير",
+        "header.centre": "المركز:",
+        "header.praticien": "الطبيب:",
+        "header.date": "التاريخ:",
+        "nav.devis": "التقدير",
+        "nav.comprendre": "فهم",
+        "nav.remboursements": "التعويضات",
+        "nav.financement": "التمويل",
+        "nav.comparateur": "مقارنة التأمين",
+        "devis.title": "خطة العلاج",
+        "devis.subtitle": "تفاصيل علاج الأسنان الخاص بك",
+        "devis.table.date": "التاريخ",
+        "devis.table.acte": "الإجراء",
+        "devis.table.dent": "السن",
+        "devis.table.honoraires": "الرسوم",
+        "devis.summary.title": "الملخص المالي",
+        "devis.summary.total": "المبلغ الإجمالي",
+        "devis.summary.ss": "الضمان الاجتماعي",
+        "devis.summary.mutuelle": "التأمين",
+        "devis.summary.rac": "المبلغ المتبقي",
+        "devis.btn.download": "تحميل PDF",
+        "devis.btn.sign": "توقيع التقدير",
+        "comprendre.title": "فهم التقدير",
+        "comprendre.subtitle": "معلومات مفصلة عن علاجك",
+        "remboursements.title": "تعويضاتي",
+        "remboursements.subtitle": "تفاصيل تعويضات الضمان الاجتماعي والتأمين",
+        "remboursements.ss.title": "الضمان الاجتماعي",
+        "remboursements.ss.desc": "تعويض مباشر من الضمان الاجتماعي إلى مؤسستك.",
+        "remboursements.ss.calc": "محسوب بنسبة 60% من قاعدة التعويض",
+        "remboursements.mut.title": "التأمين التكميلي",
+        "remboursements.mut.desc": "المبلغ المعوض من تأمينك التكميلي.",
+        "remboursements.mut.benefit": "خدماتنا تتولى جميع الإجراءات",
+        "remboursements.rac.title": "على عاتقك",
+        "remboursements.rac.desc": "المبلغ الذي يجب دفعه للمؤسسة.",
+        "remboursements.rac.info": "حلول الدفع بالتقسيط متاحة",
+        "financement.title": "التمويل",
+        "financement.subtitle": "حلول الدفع لعلاجك",
+        "financement.amount": "المبلغ المستحق",
+        "financement.selectAmount": "اختر مبلغاً للتمويل",
+        "financement.chooseMethod": "اختر طريقة الدفع",
+        "financement.klarna.title": "Klarna 3x 4x",
+        "financement.klarna.desc": "الدفع على 3 أو 4 أقساط بدون فوائد",
+        "financement.alma.title": "Alma 3x 4x",
+        "financement.alma.desc": "الدفع بالتقسيط بدون فوائد",
+        "financement.cb.title": "البطاقات البنكية",
+        "financement.cb.desc": "دفع آمن بالبطاقة",
+        "financement.secure.title": "دفع آمن",
+        "financement.secure.desc": "جميع المعاملات محمية بتشفير SSL",
+        "financement.fast.title": "موافقة سريعة",
+        "financement.fast.desc": "يتم معالجة طلب التمويل في دقائق",
+        "comparateur.title": "مقارنة التأمين",
+        "comparateur.subtitle": "قارن عروض التأمين لتحسين تعويضاتك",
+        "loading.title": "جاري الإرسال",
+        "loading.text": "إرسال معلومات التمويل الخاصة بك...",
+        "lang.select": "اللغة"
+    },
+
+    // 中文 (Chinese Mandarin)
+    zh: {
+        "header.title": "我的牙科报价",
+        "header.devisNumber": "报价编号",
+        "header.centre": "中心：",
+        "header.praticien": "医生：",
+        "header.date": "日期：",
+        "nav.devis": "我的报价",
+        "nav.comprendre": "了解",
+        "nav.remboursements": "报销",
+        "nav.financement": "融资",
+        "nav.comparateur": "保险比较",
+        "devis.title": "我的治疗计划",
+        "devis.subtitle": "您的牙科治疗详情",
+        "devis.table.date": "日期",
+        "devis.table.acte": "项目",
+        "devis.table.dent": "牙齿",
+        "devis.table.honoraires": "费用",
+        "devis.summary.title": "财务摘要",
+        "devis.summary.total": "总金额",
+        "devis.summary.ss": "社会保障",
+        "devis.summary.mutuelle": "保险",
+        "devis.summary.rac": "自付金额",
+        "devis.btn.download": "下载PDF",
+        "devis.btn.sign": "签署报价",
+        "comprendre.title": "了解我的报价",
+        "comprendre.subtitle": "关于您的治疗的详细信息",
+        "remboursements.title": "我的报销",
+        "remboursements.subtitle": "社会保障和保险报销详情",
+        "remboursements.ss.title": "社会保障",
+        "remboursements.ss.desc": "社会保障直接向您的机构报销。",
+        "remboursements.ss.calc": "按报销基数的60%计算",
+        "remboursements.mut.title": "补充保险",
+        "remboursements.mut.desc": "由您的补充保险报销的金额。",
+        "remboursements.mut.benefit": "我们的服务处理所有手续",
+        "remboursements.rac.title": "自付部分",
+        "remboursements.rac.desc": "您必须向机构支付的金额。",
+        "remboursements.rac.info": "可分期付款",
+        "financement.title": "融资",
+        "financement.subtitle": "您的治疗付款方案",
+        "financement.amount": "应付金额",
+        "financement.selectAmount": "选择融资金额",
+        "financement.chooseMethod": "选择付款方式",
+        "financement.klarna.title": "Klarna 3x 4x",
+        "financement.klarna.desc": "3或4期免息分期付款",
+        "financement.alma.title": "Alma 3x 4x",
+        "financement.alma.desc": "免息分期付款",
+        "financement.cb.title": "银行卡",
+        "financement.cb.desc": "安全卡支付",
+        "financement.secure.title": "安全支付",
+        "financement.secure.desc": "所有交易均受SSL加密保护",
+        "financement.fast.title": "快速验证",
+        "financement.fast.desc": "您的融资请求在几分钟内处理",
+        "comparateur.title": "保险比较",
+        "comparateur.subtitle": "比较保险报价以优化您的报销",
+        "loading.title": "正在传输",
+        "loading.text": "正在发送您的融资信息...",
+        "lang.select": "语言"
+    },
+
+    // Srpski (Serbian)
+    sr: {
+        "header.title": "Moj Stomatološki Predračun",
+        "header.devisNumber": "Predračun br.",
+        "header.centre": "Centar:",
+        "header.praticien": "Lekar:",
+        "header.date": "Datum:",
+        "nav.devis": "Moj Predračun",
+        "nav.comprendre": "Razumevanje",
+        "nav.remboursements": "Povraćaji",
+        "nav.financement": "Finansiranje",
+        "nav.comparateur": "Uporedi Osiguranja",
+        "devis.title": "Moj Plan Lečenja",
+        "devis.subtitle": "Detalji vašeg stomatološkog tretmana",
+        "devis.table.date": "Datum",
+        "devis.table.acte": "Postupak",
+        "devis.table.dent": "Zub",
+        "devis.table.honoraires": "Cena",
+        "devis.summary.title": "Finansijski Pregled",
+        "devis.summary.total": "Ukupan iznos",
+        "devis.summary.ss": "Socijalno Osiguranje",
+        "devis.summary.mutuelle": "Osiguranje",
+        "devis.summary.rac": "Vaš udeo",
+        "devis.btn.download": "Preuzmi PDF",
+        "devis.btn.sign": "Potpiši Predračun",
+        "comprendre.title": "Razumevanje Mog Predračuna",
+        "comprendre.subtitle": "Detaljne informacije o vašem tretmanu",
+        "remboursements.title": "Moji Povraćaji",
+        "remboursements.subtitle": "Detalji povraćaja socijalnog osiguranja i osiguranja",
+        "remboursements.ss.title": "Socijalno Osiguranje",
+        "remboursements.ss.desc": "Direktni povraćaj od socijalnog osiguranja vašoj ustanovi.",
+        "remboursements.ss.calc": "Izračunato na 60% baze povraćaja",
+        "remboursements.mut.title": "Dopunsko Osiguranje",
+        "remboursements.mut.desc": "Iznos koji vraća vaše dopunsko osiguranje.",
+        "remboursements.mut.benefit": "Naše usluge se bave svim postupcima",
+        "remboursements.rac.title": "Vaš Udeo",
+        "remboursements.rac.desc": "Iznos koji morate platiti ustanovi.",
+        "remboursements.rac.info": "Dostupno plaćanje na rate",
+        "financement.title": "Finansiranje",
+        "financement.subtitle": "Rešenja za plaćanje vašeg tretmana",
+        "financement.amount": "Iznos za plaćanje",
+        "financement.selectAmount": "Izaberite iznos za finansiranje",
+        "financement.chooseMethod": "Izaberite način plaćanja",
+        "financement.klarna.title": "Klarna 3x 4x",
+        "financement.klarna.desc": "Plaćanje u 3 ili 4 rate bez kamate",
+        "financement.alma.title": "Alma 3x 4x",
+        "financement.alma.desc": "Plaćanje na rate bez kamate",
+        "financement.cb.title": "Platne Kartice",
+        "financement.cb.desc": "Sigurno plaćanje karticom",
+        "financement.secure.title": "Sigurno Plaćanje",
+        "financement.secure.desc": "Sve transakcije su zaštićene SSL enkripcijom",
+        "financement.fast.title": "Brza Validacija",
+        "financement.fast.desc": "Vaš zahtev za finansiranje se obrađuje za nekoliko minuta",
+        "comparateur.title": "Uporedi Osiguranja",
+        "comparateur.subtitle": "Uporedite ponude osiguranja da optimizujete povraćaje",
+        "loading.title": "Prenos u toku",
+        "loading.text": "Slanje vaših informacija o finansiranju...",
+        "lang.select": "Jezik"
+    },
+
+    // Deutsch (German)
+    de: {
+        "header.title": "Mein Zahnarzt-Kostenvoranschlag",
+        "header.devisNumber": "Kostenvoranschlag Nr.",
+        "header.centre": "Zentrum:",
+        "header.praticien": "Arzt:",
+        "header.date": "Datum:",
+        "nav.devis": "Mein Kostenvoranschlag",
+        "nav.comprendre": "Verstehen",
+        "nav.remboursements": "Erstattungen",
+        "nav.financement": "Finanzierung",
+        "nav.comparateur": "Versicherungsvergleich",
+        "devis.title": "Mein Behandlungsplan",
+        "devis.subtitle": "Details Ihrer zahnärztlichen Behandlung",
+        "devis.table.date": "Datum",
+        "devis.table.acte": "Behandlung",
+        "devis.table.dent": "Zahn",
+        "devis.table.honoraires": "Kosten",
+        "devis.summary.title": "Finanzübersicht",
+        "devis.summary.total": "Gesamtbetrag",
+        "devis.summary.ss": "Sozialversicherung",
+        "devis.summary.mutuelle": "Versicherung",
+        "devis.summary.rac": "Ihr Anteil",
+        "devis.btn.download": "PDF herunterladen",
+        "devis.btn.sign": "Kostenvoranschlag unterschreiben",
+        "comprendre.title": "Meinen Kostenvoranschlag verstehen",
+        "comprendre.subtitle": "Detaillierte Informationen zu Ihrer Behandlung",
+        "remboursements.title": "Meine Erstattungen",
+        "remboursements.subtitle": "Details zu Erstattungen der Sozialversicherung und Versicherung",
+        "remboursements.ss.title": "Sozialversicherung",
+        "remboursements.ss.desc": "Direkte Erstattung der Sozialversicherung an Ihre Einrichtung.",
+        "remboursements.ss.calc": "Berechnet mit 60% der Erstattungsbasis",
+        "remboursements.mut.title": "Zusatzversicherung",
+        "remboursements.mut.desc": "Betrag, der von Ihrer Zusatzversicherung erstattet wird.",
+        "remboursements.mut.benefit": "Unsere Dienste kümmern sich um alle Verfahren",
+        "remboursements.rac.title": "Ihr Anteil",
+        "remboursements.rac.desc": "Betrag, den Sie an die Einrichtung zahlen müssen.",
+        "remboursements.rac.info": "Ratenzahlung möglich",
+        "financement.title": "Finanzierung",
+        "financement.subtitle": "Zahlungslösungen für Ihre Behandlung",
+        "financement.amount": "Zu zahlender Betrag",
+        "financement.selectAmount": "Wählen Sie einen zu finanzierenden Betrag",
+        "financement.chooseMethod": "Wählen Sie Ihre Zahlungsmethode",
+        "financement.klarna.title": "Klarna 3x 4x",
+        "financement.klarna.desc": "Zahlung in 3 oder 4 zinsfreien Raten",
+        "financement.alma.title": "Alma 3x 4x",
+        "financement.alma.desc": "Zinsfreie Ratenzahlung",
+        "financement.cb.title": "Bankkarten",
+        "financement.cb.desc": "Sichere Kartenzahlung",
+        "financement.secure.title": "Sichere Zahlung",
+        "financement.secure.desc": "Alle Transaktionen sind durch SSL-Verschlüsselung geschützt",
+        "financement.fast.title": "Schnelle Validierung",
+        "financement.fast.desc": "Ihr Finanzierungsantrag wird in Minuten bearbeitet",
+        "comparateur.title": "Versicherungsvergleich",
+        "comparateur.subtitle": "Vergleichen Sie Versicherungsangebote um Ihre Erstattungen zu optimieren",
+        "loading.title": "Übertragung läuft",
+        "loading.text": "Senden Ihrer Finanzierungsinformationen...",
+        "lang.select": "Sprache"
     }
 };
+
+// Liste des langues disponibles
+const availableLanguages = [
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'es', name: 'Español', flag: '🇪🇸' },
+    { code: 'pt', name: 'Português', flag: '🇵🇹' },
+    { code: 'ar', name: 'العربية', flag: '🇸🇦', rtl: true },
+    { code: 'zh', name: '中文', flag: '🇨🇳' },
+    { code: 'sr', name: 'Srpski', flag: '🇷🇸' },
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' }
+];
 
 // Langue actuelle
 let currentLanguage = 'fr';
@@ -389,12 +509,21 @@ function setLanguage(lang) {
         localStorage.setItem('devis-language', lang);
         applyTranslations();
         updateLanguageSelector();
+
+        // Gérer le RTL pour l'arabe
+        const langConfig = availableLanguages.find(l => l.code === lang);
+        if (langConfig && langConfig.rtl) {
+            document.documentElement.setAttribute('dir', 'rtl');
+            document.body.classList.add('rtl');
+        } else {
+            document.documentElement.setAttribute('dir', 'ltr');
+            document.body.classList.remove('rtl');
+        }
     }
 }
 
 // Appliquer les traductions à tous les éléments avec data-i18n
 function applyTranslations() {
-    // Éléments avec data-i18n pour le texte
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         const translation = t(key);
@@ -403,7 +532,6 @@ function applyTranslations() {
         }
     });
 
-    // Éléments avec data-i18n-placeholder pour les placeholders
     document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
         const key = element.getAttribute('data-i18n-placeholder');
         const translation = t(key);
@@ -412,7 +540,6 @@ function applyTranslations() {
         }
     });
 
-    // Éléments avec data-i18n-title pour les titres
     document.querySelectorAll('[data-i18n-title]').forEach(element => {
         const key = element.getAttribute('data-i18n-title');
         const translation = t(key);
@@ -421,7 +548,6 @@ function applyTranslations() {
         }
     });
 
-    // Mettre à jour l'attribut lang du document
     document.documentElement.lang = currentLanguage;
 }
 
@@ -431,29 +557,15 @@ function updateLanguageSelector() {
     if (selector) {
         selector.value = currentLanguage;
     }
-
-    // Mettre à jour le bouton actif
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-lang') === currentLanguage) {
-            btn.classList.add('active');
-        }
-    });
 }
 
 // Initialiser la langue au chargement
 function initializeLanguage() {
-    // Vérifier le paramètre URL
     const urlParams = new URLSearchParams(window.location.search);
     const urlLang = urlParams.get('lang');
-
-    // Vérifier le localStorage
     const savedLang = localStorage.getItem('devis-language');
-
-    // Vérifier la langue du navigateur
     const browserLang = navigator.language.split('-')[0];
 
-    // Priorité : URL > localStorage > navigateur > français
     if (urlLang && translations[urlLang]) {
         currentLanguage = urlLang;
     } else if (savedLang && translations[savedLang]) {
@@ -467,14 +579,14 @@ function initializeLanguage() {
     localStorage.setItem('devis-language', currentLanguage);
     applyTranslations();
     updateLanguageSelector();
-}
 
-// Liste des langues disponibles
-const availableLanguages = [
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
-    { code: 'en', name: 'English', flag: '🇬🇧' },
-    { code: 'es', name: 'Español', flag: '🇪🇸' }
-];
+    // Gérer le RTL pour l'arabe
+    const langConfig = availableLanguages.find(l => l.code === currentLanguage);
+    if (langConfig && langConfig.rtl) {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.body.classList.add('rtl');
+    }
+}
 
 // Exporter pour utilisation globale
 window.translations = translations;
